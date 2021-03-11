@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gridDisplay = document.querySelector('.grid');
-    const scoreDisplay = document.querySelector('#score')
-    const resultDisplay = document.getElementById('result');
     const overlay = document.querySelector('.overlay');
     const infoContainer = document.querySelector('.info-container');
     const againBtn = document.getElementById('again');
@@ -315,4 +313,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
+
+    module.exports = checkForGameOver;
 })
