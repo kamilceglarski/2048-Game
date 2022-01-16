@@ -1,135 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
 :root {
-    --fontColorLight: rgb(255, 244, 235);
-    --fontColorDark: rgb(128, 118, 108);
-    --empty-bgColor: rgb(204, 192, 178);
-    --two-bgColor: rgb(238, 228, 218);
-    --four-bgColor: rgb(236, 224, 200);
-    --eight-bgColor: rgb(242, 176, 121);
-    --sixteen-bgColor: rgb(245, 149, 99);
-    --thirtytwo-bgColor: rgb(245, 124, 95);
-    --sixtyfour-bgColor: rgb(247, 92, 58);
-    --oneHundred-bgColor: rgb(238, 207, 115);
-    --twoHundred-bgColor: rgb(242, 208, 75);
-    --fiveHundred-bgColor: rgb(237, 198, 81);
-    --oneThousand-bgColor: rgb(227, 186, 20);
-    --twoThousand-bgColor: rgb(233, 197, 0);
-    --fourThousand-bgColor: rgb(96, 217, 146);
+  --favouriteColor: green;
+  --fontColorLight: rgb(255, 244, 235);
+  --fontColorDark: rgb(128, 118, 108);
+  --empty-bgColor: rgb(204, 192, 178);
+  --two-bgColor: rgb(238, 228, 218);
+  --four-bgColor: rgb(236, 224, 200);
+  --eight-bgColor: rgb(242, 176, 121);
+  --sixteen-bgColor: rgb(245, 149, 99);
+  --thirtytwo-bgColor: rgb(245, 124, 95);
+  --sixtyfour-bgColor: rgb(247, 92, 58);
+  --oneHundred-bgColor: rgb(238, 207, 115);
+  --twoHundred-bgColor: rgb(242, 208, 75);
+  --fiveHundred-bgColor: rgb(237, 198, 81);
+  --oneThousand-bgColor: rgb(227, 186, 20);
+  --twoThousand-bgColor: rgb(233, 197, 0);
+  --fourThousand-bgColor: rgb(96, 217, 146);
 }
 
 body {
-    background-color: rgb(251, 248, 239);
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Poppins';
-    overflow: hidden;
+  background-color: rgb(251, 248, 239);
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins';
+  overflow: hidden;
 
 
 }
 
 .container {
-    /* max-width: 1140px; */
-    max-width: 70vmin;
-    display: grid;
-    flex-direction: column;
-    margin: 0 auto;
+  /* max-width: 1140px; */
+  max-width: 70vmin;
+  display: grid;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 1rem 2rem; */
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem 2rem; */
+  margin-bottom: 1rem;
 }
 
 .game-title {
-    font-size: 5rem;
-    font-weight: bold;
-    color: var(--fontColorDark)
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--fontColorDark)
 }
 
 .score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--empty-bgColor);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--empty-bgColor);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.25rem 3rem;
 }
 
 .description {
-    color: var(--fontColorDark);
+  color: var(--fontColorDark);
 
 }
 
 .description span {
-    color: black;
+  color: black;
 }
 
 .btn-newGame {
-    background-color: rgb(142, 122, 102);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0.25rem 2rem;
-    margin-left: 1rem;
-    cursor: pointer;
-    text-align: center;
+  background-color: rgb(142, 122, 102);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.25rem 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
 }
 
 
 .grid-container {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    font-family: 'Poppins';
+  font-family: 'Poppins';
 }
 
 .grid {
-    background-color: rgb(187, 172, 159);
-    height: 70vmin;
-    width: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 5px;
-    margin-top: 5%;
+  background-color: rgb(187, 172, 159);
+  height: 70vmin;
+  width: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 5%;
 }
 
 .grid div {
-    width: 23%;
-    height: 23%;
-    background-color: blue;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 7vmin;
-    font-weight: bold;
-    line-height: 250%;
-    color: var(--fontColorDark);
-    background-color: var(--empty-bgColor);
+  width: 23%;
+  height: 23%;
+  background-color: blue;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 7vmin;
+  font-weight: bold;
+  line-height: 250%;
+  color: var(--fontColorDark);
+  background-color: var(--empty-bgColor);
 }
 
 .overlay {
-    position: absolute;
-    width: 70vmin;
-    height: 70vmin;
-    margin-top: 2.5%;
-    background-color: gold;
-    opacity: 0.5;
+  position: absolute;
+  width: 70vmin;
+  height: 70vmin;
+  margin-top: 2.5%;
+  background-color: gold;
+  opacity: 0.5;
 
 
 }
@@ -139,83 +140,83 @@ body {
 } */
 
 .info-container {
-    position: absolute;
+  position: absolute;
 
 }
 
 .info-container .info {
-    font-size: 4rem;
-    color: white;
-    z-index: 1;
-    text-align: center;
-    margin-top: 20%;
+  font-size: 4rem;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  margin-top: 20%;
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: space-around;
-    cursor: pointer;
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .grid .two {
-    background-color: var(--two-bgColor);
+  background-color: var(--two-bgColor);
 }
 
 .grid .four {
-    background-color: var(--four-bgColor);
+  background-color: var(--four-bgColor);
 }
 
 .grid .eight {
-    background-color: var(--eight-bgColor);
+  background-color: var(--eight-bgColor);
 }
 
 .grid .sixteen {
-    background-color: var(--sixteen-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--sixteen-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .thirtytwo {
-    background-color: var(--thirtytwo-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--thirtytwo-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .sixtyfour {
-    background-color: var(--sixtyfour-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--sixtyfour-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .oneHundred {
-    background-color: var(--oneHundred-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--oneHundred-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .twoHundred {
-    background-color: var(--twoHundred-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--twoHundred-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .fiveHundred {
-    background-color: var(--fiveHundred-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--fiveHundred-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .oneThousand {
-    background-color: var(--oneThousand-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--oneThousand-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .twoThousand {
-    background-color: var(--twoThousand-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--twoThousand-bgColor);
+  color: var(--fontColorLight);
 }
 
 .grid .fourThousand {
-    background-color: var(--fourThousand-bgColor);
-    color: var(--fontColorLight);
+  background-color: var(--fourThousand-bgColor);
+  color: var(--fontColorLight);
 }
